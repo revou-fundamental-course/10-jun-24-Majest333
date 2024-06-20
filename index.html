@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/icon-judul.png" type="image/png">
+</head>
+<body>
+    <div class="Konten_Utama">
+        <h1>Temperature Converter</h1>
+        <div class="Konten_Konversi">
+            <div class="input_Suhu">
+                <label for="Input_Suhu">Input Suhu</label>
+                <input type="number" id="Input_Suhu" placeholder="Masukan Suhu Yang Ingin Dirubah" oninput="Konversi()">
+            </div>
+            <div class="Saklar">
+                <label class="Label-Saklar">
+                    <span>Celsius ke Fahrenheit</span>
+                    <input type="checkbox" id="Saklar-Konversi" onchange="Konversi()">
+                    <span class="slider"></span>
+                    <span>Fahrenheit ke Celsius</span>
+                </label>
+            </div>
+            <div class="output-Suhu">
+                <label for="Output_Suhu">Output Suhu</label>
+                <input type="text" id="Output_Suhu" readonly placeholder="Hasil Suhu Yang Dirubah">
+            </div>
+            <div class="Proses_konversi">
+                <label>Proses Konversi</label>
+                <div id="Proses"></div>
+                <div id="Penjelasan">
+                    <h3>Bagaimana caranya merubah dari Celcius ke Fahrenheit?🤔</h3>
+                    <p>Kalikan nilai suhu dalam Celcius dengan 9/5 lalu tambahkan 32.</p>
+                    <h3>Bagaimana caranya merubah dari Fahrenheit ke Celcius?🤔</h3>
+                    <p>Kurangi 32 dari nilai suhu dalam Fahrenheit lalu kalikan dengan 5/9.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
